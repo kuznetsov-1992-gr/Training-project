@@ -1,0 +1,44 @@
+@import 'variable';
+
+.footer{
+
+
+    &__network{
+        width: 342px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    &__text{
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: $header-color;
+        font-weight: 700;
+        margin-bottom: 123px;
+
+    }
+    &__svg{
+        fill: $main-color;
+
+        &:hover{
+            fill: $header-color;
+        }
+    }
+}
+
+@media (max-width: 979px){
+    .footer{
+        &__text{
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            color: $header-color;
+            font-weight: 500;
+            margin-bottom: 80px;
+    
+        }
+    }
+
+}

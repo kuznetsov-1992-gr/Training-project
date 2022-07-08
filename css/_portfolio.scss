@@ -1,0 +1,65 @@
+@import 'variable';
+
+.portfolio{
+
+    background-color: $bg-color;
+    padding-top: 112px;
+    
+
+
+    &__titel{
+        font-size: 34px;
+        line-height: 42px; 
+        font-weight: 700;
+        color: $main-color;
+        margin-bottom: 47px;
+    }
+
+    &__project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.project{
+
+    &__link{
+        color: $main-color;
+        margin-top: 45px;
+        margin-bottom: 100px;
+        text-decoration: none;
+
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 979px){
+    .portfolio{
+
+        
+        padding-top: 81px;
+
+        &__titel{
+            margin-bottom: 64px;
+        }
+    } 
+    
+    .project{
+        // margin-top: 33px;
+        margin-bottom: 78px;
+
+        &__link{
+            margin-top: 33px;
+            margin-bottom: 0px;
+        }
+    }    
+    
+
+}

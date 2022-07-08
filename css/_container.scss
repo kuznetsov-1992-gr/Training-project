@@ -1,0 +1,35 @@
+.container{
+    max-width: 943px;
+    margin: 0 auto;
+
+    &__flex-between{
+        display: flex;
+        justify-content: space-between;
+
+        
+        &_down{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    }
+
+    &__flex-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+}
+
+@media all and (max-width: 979px){
+    .container{
+        max-width: 317px;
+        &__flex-between{
+        display: flex;
+        flex-direction: column;
+        }
+    }
+}
